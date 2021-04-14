@@ -14,6 +14,7 @@ TBD
 ## Backup and Restore
 The backup and restore process relies on the official process from the [Bookstack](https://www.bookstackapp.com/docs/admin/backup-restore/).
 Please find hereunder the adaptation of the procedure **to be compliant with docker usage.**
+Additionnal information can be found [here](https://knoats.com/books/bookstack/page/backup-bookstack-using-docker)
 ### Database Backup
 ```sh
 docker exec -it bookstack_db  /bin/bash -c 'mysqldump -u bookstack -pSpieSpie06 bookstackapp > /config/backup.sql'
